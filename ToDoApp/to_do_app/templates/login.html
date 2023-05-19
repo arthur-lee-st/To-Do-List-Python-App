@@ -1,0 +1,25 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% include "header.html" %}
+
+{% block content %}
+    <div class="container-fluid auth-box-register-login">
+
+        <h1>Sign In</h1>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="message-color">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+
+    </div>
+
+    <div class="row footerrow-login">
+        {% include "footer.html" %}
+    </div>
+{% endblock %}
+
