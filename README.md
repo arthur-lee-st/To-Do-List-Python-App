@@ -10,6 +10,7 @@ Python Flask Json API Authentication Sqlite Html Css
 ____________________________________________________________________________________________________________________
 
 How to run:
-
-    Open a terminal then type in "flask --app to_do_app run"
+   
+    Open a terminal to create and activate a python virtual environment
+    In the terminal, type in "flask --app to_do_app run"
     Open a browser, then type in "localhost:5000"
