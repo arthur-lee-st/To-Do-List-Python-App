@@ -14,5 +14,15 @@ ________________________________________________________________________________
 
 How to run:
    
-    In the terminal, type "docker run -p 5000:5000 -d to_do_app"
+    In the terminal, 
+       1. build docker image, type "docker image build -t to_do_app ."
+       2. run docker image, type "docker run -p 5000:5000 -d to_do_app"
     Open a browser, then type in "localhost:5000"
+
+____________________________________________________________________________________________________________________
+
+How to stop:
+   
+    In the terminal, 
+       1. type "docker ps" to get container id
+       2. type "docker stop <insert container id>"
