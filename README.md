@@ -14,6 +14,5 @@ ________________________________________________________________________________
 
 How to run:
    
-    Open a terminal to create and activate a python virtual environment
-    In the terminal, type in "flask --app to_do_app run"
+    In the terminal, type "docker run -p 5000:5000 -d to_do_app"
     Open a browser, then type in "localhost:5000"
