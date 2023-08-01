@@ -1,0 +1,345 @@
+/* note: press ctrl-shift-r to reload browser */
+
+html{
+    height: 100%;
+    max-width: 100%;
+}
+
+body {
+    background-image: url("../images/mainbackground.jpg");
+    background-size: cover;
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 100%;
+    max-width: 100%;
+}
+/*
+body-content {
+    min-height: calc(100vh - 200px);
+}
+*/
+#title .container-fluid {
+    padding: 3% 15% 3%;
+}
+
+a.navbar-brand {
+    font-size: 1.8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* index.html */
+.box {
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.col-lg-6 {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+#frontpagecol {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#frontpage-pic {
+    width: 102%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.auth-box {
+    width: 30%;
+    min-width: 200px;
+}
+
+.auth-box-register-login {
+    width: 30%;
+    min-width: 200px;
+}
+
+#username, #password {
+    border: #E3D6C3;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+.btn-block + .btn-block {
+    margin-top: 0px;
+}
+
+.main-pg-btn1 {
+    background-color: #EBE5CE;
+    color: rgba(0,0,0,.7);
+    border: #E3D6C3;
+    font-weight: bold;
+    padding: 10% 0;
+    font-size: 25px;
+}
+
+.grouped {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    max-width: 100%;
+}
+
+.main-pg-col {
+    padding: 3% 15% 3%;
+}
+
+.main-msg {
+    text-align: left;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    padding-top:30px;
+}
+
+.main-pg-btn1, #submit {
+    background-color: #EBE5CE;
+    color: rgba(0,0,0,.7);
+    border: #E3D6C3;
+    font-weight: bold;
+    padding: 10% 0;
+}
+
+.main-pg-btn1:hover, #submit:hover {
+    background-color: #E3D6C3;
+    color: rgba(0,0,0,.7);
+}
+
+#submit {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: .25rem;
+    display: block;
+    width: 100%;
+}
+
+#submit:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+.message-color {
+    color: red;
+}
+
+#addButton {
+    margin:0 auto;
+    display:block;
+    background-color: #EBE5CE;
+    color: rgba(0,0,0,.7);
+    border: #E3D6C3;
+}
+
+#addButton:hover {
+    background-color: #E3D6C3;
+}
+
+#addButton:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+#submit_add, #submit_edit, #submit_delete {
+    background-color: #EBE5CE;
+    color: rgba(0,0,0,.7);
+    border-radius: .25rem;
+    border: #E3D6C3;
+}
+
+#submit_add:hover, #submit_edit:hover, #submit_delete:hover {
+    background-color: #E3D6C3;
+}
+
+#submit_add:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+#submit_edit:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+#submit_delete:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: 0 0 0 .2rem #E3D6C3;
+}
+
+.form-control:focus {
+    border-color: #E3D6C3;
+}
+
+.form_label_position {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* weather */
+.weather {
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+.weather_title {
+    padding-top:10px;
+    padding-bottom:2px;
+}
+
+.weather_item {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/* the table (beginning of CSS) */
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.styled-table thead tr {
+    background-color: #EBDDCA;
+    color: rgba(0,0,0,.7);
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #CFD1C3;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #CFD1C3;
+}
+
+.update-column {
+    text-align: center;
+}
+
+.table_edit_icon, .table_edit_icon:hover {
+    color: #BFB4A4;
+    text-decoration: none;
+}
+
+.table_delete_icon, .table_delete_icon:hover {
+    color: #B84C46;
+    text-decoration: none;
+}
+
+/* the table (ending of CSS) */
+
+
+.about-pg-col {
+    padding-left:17%;
+    padding-right:17%;
+}
+
+#weathersite {
+    color: black;
+}
+
+#weathersite:hover {
+    text-decoration: none;
+}
+
+.footerrow {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-left:12px;
+}
+
+.footerrow-index {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-left:0px;
+    padding-left:12px;
+}
+
+.footerrow-index-loggedin {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-left:12px;
+}
+
+.footerrow-about {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-left:12px;
+}
+
+.footerrow-register {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-right:0px;
+    padding-left:12px;
+}
+
+.footerrow-login {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-right:0px;
+    padding-left:12px;
+}
+
+@media (max-width: 1028px) {
+
+	#frontpage-pic {
+		position: static;
+		transform: rotate(0deg);
+		padding-left: 0px;
+	}
+}

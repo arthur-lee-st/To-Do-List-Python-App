@@ -1,0 +1,19 @@
+{% include "header.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div id="about-app" class="row">
+            <div class="about-pg-col">
+                <div>
+                    <p>My first web app (for practice and portfolio) built using Python Flask framework.</p>
+                    <p>Weather data comes from <a id="weathersite" href="https://open-meteo.com/">Open-Meteo.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row footerrow-about">
+            {% include "footer.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
